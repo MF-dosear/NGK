@@ -1,0 +1,5 @@
+framework module NGSDK {
+    umbrella header "NGSDKHeader.h"
+    export *
+    module * {export *}
+}

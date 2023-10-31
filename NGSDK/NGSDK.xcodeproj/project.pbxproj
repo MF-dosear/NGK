@@ -1,0 +1,1416 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		314316A74A1EC572E8A3F1FC /* Pods_NGSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA6896D1697B75565020314D /* Pods_NGSDK.framework */; };
+		91435696299F71420046736D /* NGNoticeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91435695299F71420046736D /* NGNoticeVC.swift */; };
+		91435698299F89910046736D /* NGEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91435697299F89910046736D /* NGEvent.swift */; };
+		9143569A299F8BEB0046736D /* NGConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91435699299F8BEB0046736D /* NGConfig.swift */; };
+		918EE6B0299C7D4F00B9C85B /* NGButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 918EE6AF299C7D4F00B9C85B /* NGButton.swift */; };
+		918EE6B2299C7D5A00B9C85B /* NGTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 918EE6B1299C7D5A00B9C85B /* NGTextField.swift */; };
+		918EE6B4299C7FDE00B9C85B /* NGDetault.swift in Sources */ = {isa = PBXBuildFile; fileRef = 918EE6B3299C7FDE00B9C85B /* NGDetault.swift */; };
+		918EE6B6299CAF0100B9C85B /* NGToast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 918EE6B5299CAF0100B9C85B /* NGToast.swift */; };
+		918EE6B8299CBC8900B9C85B /* NGLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 918EE6B7299CBC8900B9C85B /* NGLabel.swift */; };
+		918EE6BA299CBE9B00B9C85B /* NGProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 918EE6B9299CBE9B00B9C85B /* NGProtocol.swift */; };
+		918EE6BC299CD7AB00B9C85B /* NGNet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 918EE6BB299CD7AB00B9C85B /* NGNet.swift */; };
+		919A88BD29B1EE2700F701F1 /* NGTestVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919A88BC29B1EE2700F701F1 /* NGTestVC.swift */; };
+		919A88BF29B1F96900F701F1 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 919A88BE29B1F96900F701F1 /* CFNetwork.framework */; };
+		919AF97829AC44900094A864 /* NGModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919AF97729AC44900094A864 /* NGModule.swift */; };
+		91A8C84D299DD12A00090410 /* NGDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A8C84C299DD12A00090410 /* NGDevice.swift */; };
+		91A8C84F299E198600090410 /* NGUpdateVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A8C84E299E198600090410 /* NGUpdateVC.swift */; };
+		91D9B8D2299B8EC3005210D6 /* NGTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D9B8D1299B8EC3005210D6 /* NGTool.swift */; };
+		91D9B8D4299B90C2005210D6 /* NGPhoneLoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D9B8D3299B90C2005210D6 /* NGPhoneLoginVC.swift */; };
+		91D9B8D6299B92C2005210D6 /* NGEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D9B8D5299B92C2005210D6 /* NGEnum.swift */; };
+		91D9B8D8299B977C005210D6 /* images.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 91D9B8D7299B977C005210D6 /* images.bundle */; };
+		91DCB6EF299A07B000E90A46 /* NGSDK.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91DCB6EE299A07B000E90A46 /* NGSDK.swift */; };
+		91DE31CA29AD97CD0010F0AB /* NGButton+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91DE31C929AD97CD0010F0AB /* NGButton+Ex.swift */; };
+		91DE31CC29AD980C0010F0AB /* NGDictionary+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91DE31CB29AD980C0010F0AB /* NGDictionary+Ex.swift */; };
+		91DE31CE29AD98250010F0AB /* NGString+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91DE31CD29AD98250010F0AB /* NGString+Ex.swift */; };
+		91DE31D029AD98390010F0AB /* NGViewController+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91DE31CF29AD98390010F0AB /* NGViewController+Ex.swift */; };
+		91DE31D229AD98630010F0AB /* NGBundle+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91DE31D129AD98630010F0AB /* NGBundle+Ex.swift */; };
+		91DE31D429AD9A000010F0AB /* NGTipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91DE31D329AD9A000010F0AB /* NGTipView.swift */; };
+		91DE31D629ADD3B60010F0AB /* NGItemsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91DE31D529ADD3B60010F0AB /* NGItemsVC.swift */; };
+		91DE31D829ADE22C0010F0AB /* NGLogoutVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91DE31D729ADE22C0010F0AB /* NGLogoutVC.swift */; };
+		91DE31DA29ADF9870010F0AB /* NGApiVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91DE31D929ADF9870010F0AB /* NGApiVC.swift */; };
+		91E36CEC29A5AE33008A44EB /* NGPhoneRegVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E36CEB29A5AE33008A44EB /* NGPhoneRegVC.swift */; };
+		91E36CEE29A60E5E008A44EB /* NGRealm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E36CED29A60E5E008A44EB /* NGRealm.swift */; };
+		91E36CF029A622F2008A44EB /* NGBindVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E36CEF29A622F2008A44EB /* NGBindVC.swift */; };
+		91E39D9D29A860B40061EAC4 /* NGShare.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E39D9C29A860B40061EAC4 /* NGShare.swift */; };
+		91E39D9F29A869230061EAC4 /* NGSDKHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 91E39D9E29A868F10061EAC4 /* NGSDKHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		91E39DB329A89A070061EAC4 /* WXApi.h in Headers */ = {isa = PBXBuildFile; fileRef = 91E39DA729A89A070061EAC4 /* WXApi.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		91E39DB429A89A070061EAC4 /* WXApiObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 91E39DA829A89A070061EAC4 /* WXApiObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		91E39DB529A89A070061EAC4 /* WechatAuthSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 91E39DA929A89A070061EAC4 /* WechatAuthSDK.h */; };
+		91E39DB629A89A070061EAC4 /* libWeChatSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 91E39DAA29A89A070061EAC4 /* libWeChatSDK.a */; };
+		91E39DB729A89A080061EAC4 /* sdkdef.h in Headers */ = {isa = PBXBuildFile; fileRef = 91E39DAC29A89A070061EAC4 /* sdkdef.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		91E39DB829A89A080061EAC4 /* TencentOpenApi_IOS_Bundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 91E39DAD29A89A070061EAC4 /* TencentOpenApi_IOS_Bundle.bundle */; };
+		91E39DB929A89A080061EAC4 /* TencentOpenAPI.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 91E39DAE29A89A070061EAC4 /* TencentOpenAPI.a */; };
+		91E39DBA29A89A080061EAC4 /* TencentOpenApiUmbrellaHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 91E39DAF29A89A070061EAC4 /* TencentOpenApiUmbrellaHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		91E39DBB29A89A080061EAC4 /* TencentOAuth.h in Headers */ = {isa = PBXBuildFile; fileRef = 91E39DB029A89A070061EAC4 /* TencentOAuth.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		91E39DBC29A89A080061EAC4 /* QQApiInterface.h in Headers */ = {isa = PBXBuildFile; fileRef = 91E39DB129A89A070061EAC4 /* QQApiInterface.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		91E39DBD29A89A080061EAC4 /* QQApiInterfaceObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 91E39DB229A89A070061EAC4 /* QQApiInterfaceObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		91E39DC229A8B1310061EAC4 /* NGImage+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E39DC129A8B1310061EAC4 /* NGImage+Ex.swift */; };
+		91E45C9B299B655900625A27 /* NGNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E45C9A299B655900625A27 /* NGNavigationController.swift */; };
+		91E45C9D299B656F00625A27 /* NGViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E45C9C299B656F00625A27 /* NGViewController.swift */; };
+		91E45C9F299B659600625A27 /* NGOneLoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E45C9E299B659600625A27 /* NGOneLoginVC.swift */; };
+		91E46CFD29AF2A2300B54685 /* NGInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E46CFC29AF2A2300B54685 /* NGInfo.swift */; };
+		91E46D0629AF3BFA00B54685 /* OneLoginSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91E46CFF29AF3BFA00B54685 /* OneLoginSDK.framework */; };
+		91E46D0729AF3BFA00B54685 /* TYRZUISDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91E46D0029AF3BFA00B54685 /* TYRZUISDK.framework */; };
+		91E46D0829AF3BFA00B54685 /* account_login_sdk_noui_core.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91E46D0129AF3BFA00B54685 /* account_login_sdk_noui_core.framework */; };
+		91E46D0929AF3BFA00B54685 /* KsyzVerify.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91E46D0229AF3BFA00B54685 /* KsyzVerify.framework */; };
+		91E46D0A29AF3BFB00B54685 /* OAuth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91E46D0329AF3BFA00B54685 /* OAuth.framework */; };
+		91E46D0B29AF3BFB00B54685 /* EAccountApiSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91E46D0429AF3BFA00B54685 /* EAccountApiSDK.framework */; };
+		91E46D0C29AF3BFB00B54685 /* OneLoginResource.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 91E46D0529AF3BFA00B54685 /* OneLoginResource.bundle */; };
+		91E46D8629AF3CD700B54685 /* AES.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E46D1029AF3CD600B54685 /* AES.swift */; };
+		91E46D8729AF3CD700B54685 /* ASN1Scanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E46D1229AF3CD600B54685 /* ASN1Scanner.swift */; };
+		91E46D8829AF3CD700B54685 /* ASN1Encoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E46D1329AF3CD600B54685 /* ASN1Encoder.swift */; };
+		91E46D8929AF3CD700B54685 /* ASN1Decoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E46D1429AF3CD600B54685 /* ASN1Decoder.swift */; };
+		91E46D8A29AF3CD700B54685 /* ASN1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E46D1529AF3CD600B54685 /* ASN1.swift */; };
+		91E46D8B29AF3CD700B54685 /* StreamDecryptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E46D1629AF3CD600B54685 /* StreamDecryptor.swift */; };
+		91E46D8C29AF3CD700B54685 /* DER.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E46D1829AF3CD600B54685 /* DER.swift */; };
+		91E46D8D29AF3CD700B54685 /* BlockEncryptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E46D1929AF3CD600B54685 /* BlockEncryptor.swift */; };
+		91E46D8E29AF3CD700B54685 /* UInt64+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E46D1A29AF3CD600B54685 /* UInt64+Extension.swift */; };
+		91E46D8F29AF3CD700B54685 /* Cryptors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E46D1B29AF3CD600B54685 /* Cryptors.swift */; };
+		91E46D9029AF3CD700B54685 /* HKDF.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E46D1C29AF3CD600B54685 /* HKDF.swift */; };
+		91E46D9129AF3CD700B54685 /* ISO10126Padding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E46D1D29AF3CD600B54685 /* ISO10126Padding.swift */; };
+		91E46D9229AF3CD700B54685 /* Cipher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E46D1E29AF3CD600B54685 /* Cipher.swift */; };
+		91E46D9329AF3CD700B54685 /* AEADChaCha20Poly1305.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E46D2029AF3CD600B54685 /* AEADChaCha20Poly1305.swift */; };
+		91E46D9429AF3CD700B54685 /* AEAD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E46D2129AF3CD600B54685 /* AEAD.swift */; };
+		91E46D9529AF3CD700B54685 /* CBCMAC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E46D2229AF3CD600B54685 /* CBCMAC.swift */; };
+		91E46D9629AF3CD700B54685 /* Int+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E46D2329AF3CD600B54685 /* Int+Extension.swift */; };
+		91E46D9729AF3CD700B54685 /* AES.Cryptors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E46D2429AF3CD600B54685 /* AES.Cryptors.swift */; };
+		91E46D9829AF3CD700B54685 /* Bit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E46D2529AF3CD600B54685 /* Bit.swift */; };
+		91E46D9929AF3CD700B54685 /* HMAC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E46D2629AF3CD600B54685 /* HMAC.swift */; };
+		91E46D9A29AF3CD700B54685 /* CMAC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E46D2729AF3CD600B54685 /* CMAC.swift */; };
+		91E46D9B29AF3CD700B54685 /* UInt16+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E46D2829AF3CD600B54685 /* UInt16+Extension.swift */; };
+		91E46D9C29AF3CD700B54685 /* Collection+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E46D2929AF3CD600B54685 /* Collection+Extension.swift */; };
+		91E46D9D29AF3CD700B54685 /* UInt32+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E46D2A29AF3CD600B54685 /* UInt32+Extension.swift */; };
+		91E46D9E29AF3CD700B54685 /* Digest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E46D2B29AF3CD600B54685 /* Digest.swift */; };
+		91E46D9F29AF3CD700B54685 /* UInt128.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E46D2C29AF3CD600B54685 /* UInt128.swift */; };
+		91E46DA029AF3CD700B54685 /* RSA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E46D2E29AF3CD600B54685 /* RSA.swift */; };
+		91E46DA129AF3CD700B54685 /* RSA+Signature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E46D2F29AF3CD600B54685 /* RSA+Signature.swift */; };
+		91E46DA229AF3CD700B54685 /* RSA+Cipher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E46D3029AF3CD600B54685 /* RSA+Cipher.swift */; };
+		91E46DA329AF3CD700B54685 /* Scrypt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E46D3129AF3CD600B54685 /* Scrypt.swift */; };
+		91E46DA429AF3CD700B54685 /* NoPadding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E46D3229AF3CD600B54685 /* NoPadding.swift */; };
+		91E46DA529AF3CD700B54685 /* String+FoundationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E46D3429AF3CD600B54685 /* String+FoundationExtension.swift */; };
+		91E46DA629AF3CD700B54685 /* Blowfish+Foundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E46D3529AF3CD600B54685 /* Blowfish+Foundation.swift */; };
+		91E46DA729AF3CD700B54685 /* Utils+Foundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E46D3629AF3CD600B54685 /* Utils+Foundation.swift */; };
+		91E46DA829AF3CD700B54685 /* HMAC+Foundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E46D3729AF3CD600B54685 /* HMAC+Foundation.swift */; };
+		91E46DA929AF3CD700B54685 /* Data+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E46D3829AF3CD600B54685 /* Data+Extension.swift */; };
+		91E46DAA29AF3CD700B54685 /* ChaCha20+Foundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E46D3929AF3CD600B54685 /* ChaCha20+Foundation.swift */; };
+		91E46DAB29AF3CD700B54685 /* Array+Foundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E46D3A29AF3CD600B54685 /* Array+Foundation.swift */; };
+		91E46DAC29AF3CD700B54685 /* AES+Foundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E46D3B29AF3CD600B54685 /* AES+Foundation.swift */; };
+		91E46DAD29AF3CD700B54685 /* Rabbit+Foundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E46D3C29AF3CD600B54685 /* Rabbit+Foundation.swift */; };
+		91E46DAE29AF3CD700B54685 /* UInt8+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E46D3D29AF3CD600B54685 /* UInt8+Extension.swift */; };
+		91E46DAF29AF3CD700B54685 /* MD5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E46D3E29AF3CD600B54685 /* MD5.swift */; };
+		91E46DB029AF3CD700B54685 /* Cryptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E46D3F29AF3CD600B54685 /* Cryptor.swift */; };
+		91E46DB129AF3CD700B54685 /* CompactMap1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E46D4029AF3CD600B54685 /* CompactMap1.swift */; };
+		91E46DB229AF3CD700B54685 /* BatchedCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E46D4129AF3CD600B54685 /* BatchedCollection.swift */; };
+		91E46DB329AF3CD700B54685 /* ISO78164Padding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E46D4229AF3CD600B54685 /* ISO78164Padding.swift */; };
+		91E46DB429AF3CD700B54685 /* SecureBytes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E46D4329AF3CD600B54685 /* SecureBytes.swift */; };
+		91E46DB529AF3CD700B54685 /* Signature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E46D4429AF3CD600B54685 /* Signature.swift */; };
+		91E46DB629AF3CD700B54685 /* ZeroPadding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E46D4529AF3CD600B54685 /* ZeroPadding.swift */; };
+		91E46DB729AF3CD700B54685 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E46D4629AF3CD600B54685 /* String+Extension.swift */; };
+		91E46DB829AF3CD700B54685 /* Authenticator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E46D4729AF3CD600B54685 /* Authenticator.swift */; };
+		91E46DB929AF3CD700B54685 /* SHA3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E46D4829AF3CD600B54685 /* SHA3.swift */; };
+		91E46DBA29AF3CD700B54685 /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E46D4929AF3CD600B54685 /* Operators.swift */; };
+		91E46DBB29AF3CD700B54685 /* Rabbit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E46D4A29AF3CD600B54685 /* Rabbit.swift */; };
+		91E46DBC29AF3CD700B54685 /* SHA1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E46D4B29AF3CD600B54685 /* SHA1.swift */; };
+		91E46DBD29AF3CD700B54685 /* Poly1305.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E46D4C29AF3CD600B54685 /* Poly1305.swift */; };
+		91E46DBE29AF3CD700B54685 /* BlockCipher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E46D4D29AF3CD600B54685 /* BlockCipher.swift */; };
+		91E46DBF29AF3CD700B54685 /* Updatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E46D4E29AF3CD600B54685 /* Updatable.swift */; };
+		91E46DC029AF3CD700B54685 /* Blowfish.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E46D4F29AF3CD600B54685 /* Blowfish.swift */; };
+		91E46DC129AF3CD700B54685 /* BlockDecryptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E46D5029AF3CD600B54685 /* BlockDecryptor.swift */; };
+		91E46DC229AF3CD700B54685 /* StreamEncryptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E46D5129AF3CD600B54685 /* StreamEncryptor.swift */; };
+		91E46DC329AF3CD700B54685 /* DigestType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E46D5229AF3CD600B54685 /* DigestType.swift */; };
+		91E46DC429AF3CD700B54685 /* Utils1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E46D5329AF3CD600B54685 /* Utils1.swift */; };
+		91E46DC529AF3CD700B54685 /* Generics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E46D5429AF3CD600B54685 /* Generics.swift */; };
+		91E46DC629AF3CD700B54685 /* Checksum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E46D5529AF3CD600B54685 /* Checksum.swift */; };
+		91E46DC729AF3CD700B54685 /* SHA2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E46D5629AF3CD600B54685 /* SHA2.swift */; };
+		91E46DC829AF3CD700B54685 /* Padding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E46D5729AF3CD600B54685 /* Padding.swift */; };
+		91E46DC929AF3CD700B54685 /* PKCS7Padding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E46D5929AF3CD600B54685 /* PKCS7Padding.swift */; };
+		91E46DCA29AF3CD700B54685 /* PKCS5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E46D5A29AF3CD600B54685 /* PKCS5.swift */; };
+		91E46DCB29AF3CD700B54685 /* PKCS7.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E46D5B29AF3CD600B54685 /* PKCS7.swift */; };
+		91E46DCC29AF3CD700B54685 /* PKCS1v15.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E46D5C29AF3CD600B54685 /* PKCS1v15.swift */; };
+		91E46DCD29AF3CD700B54685 /* PBKDF2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E46D5D29AF3CD600B54685 /* PBKDF2.swift */; };
+		91E46DCE29AF3CD700B54685 /* PBKDF1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E46D5E29AF3CD600B54685 /* PBKDF1.swift */; };
+		91E46DCF29AF3CD700B54685 /* BlockModeOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E46D6029AF3CD600B54685 /* BlockModeOptions.swift */; };
+		91E46DD029AF3CD700B54685 /* OCB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E46D6129AF3CD600B54685 /* OCB.swift */; };
+		91E46DD129AF3CD700B54685 /* CFB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E46D6229AF3CD600B54685 /* CFB.swift */; };
+		91E46DD229AF3CD700B54685 /* CBC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E46D6329AF3CD600B54685 /* CBC.swift */; };
+		91E46DD329AF3CD700B54685 /* ECB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E46D6429AF3CD600B54685 /* ECB.swift */; };
+		91E46DD429AF3CD700B54685 /* CCM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E46D6529AF3CD600B54685 /* CCM.swift */; };
+		91E46DD529AF3CD700B54685 /* PCBC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E46D6629AF3CD700B54685 /* PCBC.swift */; };
+		91E46DD629AF3CD700B54685 /* BlockMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E46D6729AF3CD700B54685 /* BlockMode.swift */; };
+		91E46DD729AF3CD700B54685 /* GCM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E46D6829AF3CD700B54685 /* GCM.swift */; };
+		91E46DD829AF3CD700B54685 /* CipherModeWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E46D6929AF3CD700B54685 /* CipherModeWorker.swift */; };
+		91E46DD929AF3CD700B54685 /* CTR.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E46D6A29AF3CD700B54685 /* CTR.swift */; };
+		91E46DDA29AF3CD700B54685 /* OFB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E46D6B29AF3CD700B54685 /* OFB.swift */; };
+		91E46DDB29AF3CD700B54685 /* ChaCha20.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E46D6C29AF3CD700B54685 /* ChaCha20.swift */; };
+		91E46DDC29AF3CD700B54685 /* Random.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E46D6E29AF3CD700B54685 /* Random.swift */; };
+		91E46DDD29AF3CD700B54685 /* GCD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E46D6F29AF3CD700B54685 /* GCD.swift */; };
+		91E46DDE29AF3CD700B54685 /* Hashable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E46D7029AF3CD700B54685 /* Hashable.swift */; };
+		91E46DDF29AF3CD700B54685 /* Strideable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E46D7129AF3CD700B54685 /* Strideable.swift */; };
+		91E46DE029AF3CD700B54685 /* Addition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E46D7229AF3CD700B54685 /* Addition.swift */; };
+		91E46DE129AF3CD700B54685 /* Data Conversion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E46D7329AF3CD700B54685 /* Data Conversion.swift */; };
+		91E46DE229AF3CD700B54685 /* Bitwise Ops.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E46D7429AF3CD700B54685 /* Bitwise Ops.swift */; };
+		91E46DE329AF3CD700B54685 /* Comparable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E46D7529AF3CD700B54685 /* Comparable.swift */; };
+		91E46DE429AF3CD700B54685 /* Words and Bits.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E46D7629AF3CD700B54685 /* Words and Bits.swift */; };
+		91E46DE529AF3CD700B54685 /* Square Root.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E46D7729AF3CD700B54685 /* Square Root.swift */; };
+		91E46DE629AF3CD700B54685 /* Division.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E46D7829AF3CD700B54685 /* Division.swift */; };
+		91E46DE729AF3CD700B54685 /* Prime Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E46D7929AF3CD700B54685 /* Prime Test.swift */; };
+		91E46DE829AF3CD700B54685 /* Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E46D7A29AF3CD700B54685 /* Codable.swift */; };
+		91E46DE929AF3CD700B54685 /* BigUInt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E46D7B29AF3CD700B54685 /* BigUInt.swift */; };
+		91E46DEA29AF3CD700B54685 /* Multiplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E46D7C29AF3CD700B54685 /* Multiplication.swift */; };
+		91E46DEB29AF3CD700B54685 /* CS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E46D7D29AF3CD700B54685 /* CS.swift */; };
+		91E46DEC29AF3CD700B54685 /* Exponentiation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E46D7E29AF3CD700B54685 /* Exponentiation.swift */; };
+		91E46DED29AF3CD700B54685 /* Floating Point Conversion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E46D7F29AF3CD700B54685 /* Floating Point Conversion.swift */; };
+		91E46DEE29AF3CD700B54685 /* Shifts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E46D8029AF3CD700B54685 /* Shifts.swift */; };
+		91E46DEF29AF3CD700B54685 /* Subtraction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E46D8129AF3CD700B54685 /* Subtraction.swift */; };
+		91E46DF029AF3CD700B54685 /* Integer Conversion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E46D8229AF3CD700B54685 /* Integer Conversion.swift */; };
+		91E46DF129AF3CD700B54685 /* BigInt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E46D8329AF3CD700B54685 /* BigInt.swift */; };
+		91E46DF229AF3CD700B54685 /* String Conversion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E46D8429AF3CD700B54685 /* String Conversion.swift */; };
+		91E46DF329AF3CD700B54685 /* Array+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E46D8529AF3CD700B54685 /* Array+Extension.swift */; };
+		91E46DFE29AF3E9400B54685 /* SVRadialGradientLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 91E46DF529AF3E9400B54685 /* SVRadialGradientLayer.m */; };
+		91E46DFF29AF3E9400B54685 /* SVIndefiniteAnimatedView.h in Headers */ = {isa = PBXBuildFile; fileRef = 91E46DF629AF3E9400B54685 /* SVIndefiniteAnimatedView.h */; };
+		91E46E0029AF3E9400B54685 /* SVProgressHUD.h in Headers */ = {isa = PBXBuildFile; fileRef = 91E46DF729AF3E9400B54685 /* SVProgressHUD.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		91E46E0129AF3E9400B54685 /* SVProgressAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 91E46DF829AF3E9400B54685 /* SVProgressAnimatedView.m */; };
+		91E46E0229AF3E9400B54685 /* SVRadialGradientLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 91E46DF929AF3E9400B54685 /* SVRadialGradientLayer.h */; };
+		91E46E0329AF3E9400B54685 /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 91E46DFA29AF3E9400B54685 /* SVProgressHUD.m */; };
+		91E46E0429AF3E9400B54685 /* SVIndefiniteAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 91E46DFB29AF3E9400B54685 /* SVIndefiniteAnimatedView.m */; };
+		91E46E0529AF3E9400B54685 /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 91E46DFC29AF3E9400B54685 /* SVProgressHUD.bundle */; };
+		91E46E0629AF3E9400B54685 /* SVProgressAnimatedView.h in Headers */ = {isa = PBXBuildFile; fileRef = 91E46DFD29AF3E9400B54685 /* SVProgressAnimatedView.h */; };
+		91EA52C129A7126A00957400 /* NGAuthVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91EA52C029A7126A00957400 /* NGAuthVC.swift */; };
+		91EA52C329A7413900957400 /* NGResetVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91EA52C229A7413900957400 /* NGResetVC.swift */; };
+		91EA52C829A74DC600957400 /* NGSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 916EB3E229964EDC009E0CB0 /* NGSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		91FC4A9D29A492F700AAA900 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 91FC4A9C29A492F700AAA900 /* libc++.tbd */; };
+		91FC4A9F29A4937500AAA900 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 91FC4A9E29A4937500AAA900 /* libsqlite3.tbd */; };
+		91FC4AA129A4937B00AAA900 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 91FC4AA029A4937B00AAA900 /* libz.tbd */; };
+		91FC4AA329A4939200AAA900 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91FC4AA229A4939200AAA900 /* AdSupport.framework */; };
+		91FC4AA529A4939B00AAA900 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91FC4AA429A4939B00AAA900 /* SystemConfiguration.framework */; };
+		91FC4AA729A493AD00AAA900 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91FC4AA629A493AD00AAA900 /* Security.framework */; };
+		91FC4AA929A493B600AAA900 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91FC4AA829A493B600AAA900 /* CoreFoundation.framework */; };
+		91FC4AAB29A493BC00AAA900 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91FC4AAA29A493BC00AAA900 /* CoreTelephony.framework */; };
+		91FC4AAD29A493C500AAA900 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91FC4AAC29A493C500AAA900 /* StoreKit.framework */; };
+		91FC4AAF29A493CC00AAA900 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91FC4AAE29A493CC00AAA900 /* UIKit.framework */; };
+		91FC4AB329A49F0200AAA900 /* NGAccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91FC4AB229A49F0200AAA900 /* NGAccountVC.swift */; };
+		91FC4AB529A4AAF600AAA900 /* NGTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91FC4AB429A4AAF600AAA900 /* NGTableView.swift */; };
+		91FC4AB729A4AC8500AAA900 /* NGTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91FC4AB629A4AC8500AAA900 /* NGTableViewCell.swift */; };
+		91FC4AB929A4BF6000AAA900 /* NGFindVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91FC4AB829A4BF6000AAA900 /* NGFindVC.swift */; };
+		91FC4ABB29A4CBE600AAA900 /* NGFastRegVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91FC4ABA29A4CBE600AAA900 /* NGFastRegVC.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		62D2CE0514665664C551391C /* Pods-NGSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NGSDK.release.xcconfig"; path = "Target Support Files/Pods-NGSDK/Pods-NGSDK.release.xcconfig"; sourceTree = "<group>"; };
+		83F95CC2E54A4FEAD5BBB850 /* Pods-NGSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NGSDK.debug.xcconfig"; path = "Target Support Files/Pods-NGSDK/Pods-NGSDK.debug.xcconfig"; sourceTree = "<group>"; };
+		91435695299F71420046736D /* NGNoticeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NGNoticeVC.swift; sourceTree = "<group>"; };
+		91435697299F89910046736D /* NGEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NGEvent.swift; sourceTree = "<group>"; };
+		91435699299F8BEB0046736D /* NGConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NGConfig.swift; sourceTree = "<group>"; };
+		916EB3DF29964EDC009E0CB0 /* NGSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NGSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		916EB3E229964EDC009E0CB0 /* NGSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NGSDK.h; sourceTree = "<group>"; };
+		918EE6AF299C7D4F00B9C85B /* NGButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NGButton.swift; sourceTree = "<group>"; };
+		918EE6B1299C7D5A00B9C85B /* NGTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NGTextField.swift; sourceTree = "<group>"; };
+		918EE6B3299C7FDE00B9C85B /* NGDetault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NGDetault.swift; sourceTree = "<group>"; };
+		918EE6B5299CAF0100B9C85B /* NGToast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NGToast.swift; sourceTree = "<group>"; };
+		918EE6B7299CBC8900B9C85B /* NGLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NGLabel.swift; sourceTree = "<group>"; };
+		918EE6B9299CBE9B00B9C85B /* NGProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NGProtocol.swift; sourceTree = "<group>"; };
+		918EE6BB299CD7AB00B9C85B /* NGNet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NGNet.swift; sourceTree = "<group>"; };
+		919A88BC29B1EE2700F701F1 /* NGTestVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NGTestVC.swift; sourceTree = "<group>"; };
+		919A88BE29B1F96900F701F1 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		919AF97729AC44900094A864 /* NGModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NGModule.swift; sourceTree = "<group>"; };
+		91A8C84C299DD12A00090410 /* NGDevice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NGDevice.swift; sourceTree = "<group>"; };
+		91A8C84E299E198600090410 /* NGUpdateVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NGUpdateVC.swift; sourceTree = "<group>"; };
+		91D9B8D1299B8EC3005210D6 /* NGTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NGTool.swift; sourceTree = "<group>"; };
+		91D9B8D3299B90C2005210D6 /* NGPhoneLoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NGPhoneLoginVC.swift; sourceTree = "<group>"; };
+		91D9B8D5299B92C2005210D6 /* NGEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NGEnum.swift; sourceTree = "<group>"; };
+		91D9B8D7299B977C005210D6 /* images.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = images.bundle; sourceTree = "<group>"; };
+		91DCB6EE299A07B000E90A46 /* NGSDK.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NGSDK.swift; sourceTree = "<group>"; };
+		91DE31C929AD97CD0010F0AB /* NGButton+Ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NGButton+Ex.swift"; sourceTree = "<group>"; };
+		91DE31CB29AD980C0010F0AB /* NGDictionary+Ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NGDictionary+Ex.swift"; sourceTree = "<group>"; };
+		91DE31CD29AD98250010F0AB /* NGString+Ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NGString+Ex.swift"; sourceTree = "<group>"; };
+		91DE31CF29AD98390010F0AB /* NGViewController+Ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NGViewController+Ex.swift"; sourceTree = "<group>"; };
+		91DE31D129AD98630010F0AB /* NGBundle+Ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NGBundle+Ex.swift"; sourceTree = "<group>"; };
+		91DE31D329AD9A000010F0AB /* NGTipView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NGTipView.swift; sourceTree = "<group>"; };
+		91DE31D529ADD3B60010F0AB /* NGItemsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NGItemsVC.swift; sourceTree = "<group>"; };
+		91DE31D729ADE22C0010F0AB /* NGLogoutVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NGLogoutVC.swift; sourceTree = "<group>"; };
+		91DE31D929ADF9870010F0AB /* NGApiVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NGApiVC.swift; sourceTree = "<group>"; };
+		91E36CEB29A5AE33008A44EB /* NGPhoneRegVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NGPhoneRegVC.swift; sourceTree = "<group>"; };
+		91E36CED29A60E5E008A44EB /* NGRealm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NGRealm.swift; sourceTree = "<group>"; };
+		91E36CEF29A622F2008A44EB /* NGBindVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NGBindVC.swift; sourceTree = "<group>"; };
+		91E39D9C29A860B40061EAC4 /* NGShare.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NGShare.swift; sourceTree = "<group>"; };
+		91E39D9E29A868F10061EAC4 /* NGSDKHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NGSDKHeader.h; sourceTree = "<group>"; };
+		91E39DA729A89A070061EAC4 /* WXApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApi.h; sourceTree = "<group>"; };
+		91E39DA829A89A070061EAC4 /* WXApiObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApiObject.h; sourceTree = "<group>"; };
+		91E39DA929A89A070061EAC4 /* WechatAuthSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WechatAuthSDK.h; sourceTree = "<group>"; };
+		91E39DAA29A89A070061EAC4 /* libWeChatSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libWeChatSDK.a; sourceTree = "<group>"; };
+		91E39DAC29A89A070061EAC4 /* sdkdef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sdkdef.h; sourceTree = "<group>"; };
+		91E39DAD29A89A070061EAC4 /* TencentOpenApi_IOS_Bundle.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = TencentOpenApi_IOS_Bundle.bundle; sourceTree = "<group>"; };
+		91E39DAE29A89A070061EAC4 /* TencentOpenAPI.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = TencentOpenAPI.a; sourceTree = "<group>"; };
+		91E39DAF29A89A070061EAC4 /* TencentOpenApiUmbrellaHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TencentOpenApiUmbrellaHeader.h; sourceTree = "<group>"; };
+		91E39DB029A89A070061EAC4 /* TencentOAuth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TencentOAuth.h; sourceTree = "<group>"; };
+		91E39DB129A89A070061EAC4 /* QQApiInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QQApiInterface.h; sourceTree = "<group>"; };
+		91E39DB229A89A070061EAC4 /* QQApiInterfaceObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QQApiInterfaceObject.h; sourceTree = "<group>"; };
+		91E39DC129A8B1310061EAC4 /* NGImage+Ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NGImage+Ex.swift"; sourceTree = "<group>"; };
+		91E45C9A299B655900625A27 /* NGNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NGNavigationController.swift; sourceTree = "<group>"; };
+		91E45C9C299B656F00625A27 /* NGViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NGViewController.swift; sourceTree = "<group>"; };
+		91E45C9E299B659600625A27 /* NGOneLoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NGOneLoginVC.swift; sourceTree = "<group>"; };
+		91E46CFC29AF2A2300B54685 /* NGInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NGInfo.swift; sourceTree = "<group>"; };
+		91E46CFF29AF3BFA00B54685 /* OneLoginSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = OneLoginSDK.framework; sourceTree = "<group>"; };
+		91E46D0029AF3BFA00B54685 /* TYRZUISDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TYRZUISDK.framework; sourceTree = "<group>"; };
+		91E46D0129AF3BFA00B54685 /* account_login_sdk_noui_core.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = account_login_sdk_noui_core.framework; sourceTree = "<group>"; };
+		91E46D0229AF3BFA00B54685 /* KsyzVerify.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = KsyzVerify.framework; sourceTree = "<group>"; };
+		91E46D0329AF3BFA00B54685 /* OAuth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = OAuth.framework; sourceTree = "<group>"; };
+		91E46D0429AF3BFA00B54685 /* EAccountApiSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = EAccountApiSDK.framework; sourceTree = "<group>"; };
+		91E46D0529AF3BFA00B54685 /* OneLoginResource.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = OneLoginResource.bundle; sourceTree = "<group>"; };
+		91E46D1029AF3CD600B54685 /* AES.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AES.swift; sourceTree = "<group>"; };
+		91E46D1229AF3CD600B54685 /* ASN1Scanner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ASN1Scanner.swift; sourceTree = "<group>"; };
+		91E46D1329AF3CD600B54685 /* ASN1Encoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ASN1Encoder.swift; sourceTree = "<group>"; };
+		91E46D1429AF3CD600B54685 /* ASN1Decoder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ASN1Decoder.swift; sourceTree = "<group>"; };
+		91E46D1529AF3CD600B54685 /* ASN1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ASN1.swift; sourceTree = "<group>"; };
+		91E46D1629AF3CD600B54685 /* StreamDecryptor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StreamDecryptor.swift; sourceTree = "<group>"; };
+		91E46D1829AF3CD600B54685 /* DER.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DER.swift; sourceTree = "<group>"; };
+		91E46D1929AF3CD600B54685 /* BlockEncryptor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlockEncryptor.swift; sourceTree = "<group>"; };
+		91E46D1A29AF3CD600B54685 /* UInt64+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UInt64+Extension.swift"; sourceTree = "<group>"; };
+		91E46D1B29AF3CD600B54685 /* Cryptors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cryptors.swift; sourceTree = "<group>"; };
+		91E46D1C29AF3CD600B54685 /* HKDF.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HKDF.swift; sourceTree = "<group>"; };
+		91E46D1D29AF3CD600B54685 /* ISO10126Padding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ISO10126Padding.swift; sourceTree = "<group>"; };
+		91E46D1E29AF3CD600B54685 /* Cipher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cipher.swift; sourceTree = "<group>"; };
+		91E46D2029AF3CD600B54685 /* AEADChaCha20Poly1305.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AEADChaCha20Poly1305.swift; sourceTree = "<group>"; };
+		91E46D2129AF3CD600B54685 /* AEAD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AEAD.swift; sourceTree = "<group>"; };
+		91E46D2229AF3CD600B54685 /* CBCMAC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CBCMAC.swift; sourceTree = "<group>"; };
+		91E46D2329AF3CD600B54685 /* Int+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Int+Extension.swift"; sourceTree = "<group>"; };
+		91E46D2429AF3CD600B54685 /* AES.Cryptors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AES.Cryptors.swift; sourceTree = "<group>"; };
+		91E46D2529AF3CD600B54685 /* Bit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bit.swift; sourceTree = "<group>"; };
+		91E46D2629AF3CD600B54685 /* HMAC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HMAC.swift; sourceTree = "<group>"; };
+		91E46D2729AF3CD600B54685 /* CMAC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CMAC.swift; sourceTree = "<group>"; };
+		91E46D2829AF3CD600B54685 /* UInt16+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UInt16+Extension.swift"; sourceTree = "<group>"; };
+		91E46D2929AF3CD600B54685 /* Collection+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Collection+Extension.swift"; sourceTree = "<group>"; };
+		91E46D2A29AF3CD600B54685 /* UInt32+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UInt32+Extension.swift"; sourceTree = "<group>"; };
+		91E46D2B29AF3CD600B54685 /* Digest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Digest.swift; sourceTree = "<group>"; };
+		91E46D2C29AF3CD600B54685 /* UInt128.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UInt128.swift; sourceTree = "<group>"; };
+		91E46D2E29AF3CD600B54685 /* RSA.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RSA.swift; sourceTree = "<group>"; };
+		91E46D2F29AF3CD600B54685 /* RSA+Signature.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "RSA+Signature.swift"; sourceTree = "<group>"; };
+		91E46D3029AF3CD600B54685 /* RSA+Cipher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "RSA+Cipher.swift"; sourceTree = "<group>"; };
+		91E46D3129AF3CD600B54685 /* Scrypt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Scrypt.swift; sourceTree = "<group>"; };
+		91E46D3229AF3CD600B54685 /* NoPadding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoPadding.swift; sourceTree = "<group>"; };
+		91E46D3429AF3CD600B54685 /* String+FoundationExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+FoundationExtension.swift"; sourceTree = "<group>"; };
+		91E46D3529AF3CD600B54685 /* Blowfish+Foundation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Blowfish+Foundation.swift"; sourceTree = "<group>"; };
+		91E46D3629AF3CD600B54685 /* Utils+Foundation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Utils+Foundation.swift"; sourceTree = "<group>"; };
+		91E46D3729AF3CD600B54685 /* HMAC+Foundation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "HMAC+Foundation.swift"; sourceTree = "<group>"; };
+		91E46D3829AF3CD600B54685 /* Data+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Data+Extension.swift"; sourceTree = "<group>"; };
+		91E46D3929AF3CD600B54685 /* ChaCha20+Foundation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ChaCha20+Foundation.swift"; sourceTree = "<group>"; };
+		91E46D3A29AF3CD600B54685 /* Array+Foundation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+Foundation.swift"; sourceTree = "<group>"; };
+		91E46D3B29AF3CD600B54685 /* AES+Foundation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AES+Foundation.swift"; sourceTree = "<group>"; };
+		91E46D3C29AF3CD600B54685 /* Rabbit+Foundation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Rabbit+Foundation.swift"; sourceTree = "<group>"; };
+		91E46D3D29AF3CD600B54685 /* UInt8+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UInt8+Extension.swift"; sourceTree = "<group>"; };
+		91E46D3E29AF3CD600B54685 /* MD5.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MD5.swift; sourceTree = "<group>"; };
+		91E46D3F29AF3CD600B54685 /* Cryptor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cryptor.swift; sourceTree = "<group>"; };
+		91E46D4029AF3CD600B54685 /* CompactMap1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompactMap1.swift; sourceTree = "<group>"; };
+		91E46D4129AF3CD600B54685 /* BatchedCollection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BatchedCollection.swift; sourceTree = "<group>"; };
+		91E46D4229AF3CD600B54685 /* ISO78164Padding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ISO78164Padding.swift; sourceTree = "<group>"; };
+		91E46D4329AF3CD600B54685 /* SecureBytes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecureBytes.swift; sourceTree = "<group>"; };
+		91E46D4429AF3CD600B54685 /* Signature.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Signature.swift; sourceTree = "<group>"; };
+		91E46D4529AF3CD600B54685 /* ZeroPadding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZeroPadding.swift; sourceTree = "<group>"; };
+		91E46D4629AF3CD600B54685 /* String+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		91E46D4729AF3CD600B54685 /* Authenticator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Authenticator.swift; sourceTree = "<group>"; };
+		91E46D4829AF3CD600B54685 /* SHA3.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SHA3.swift; sourceTree = "<group>"; };
+		91E46D4929AF3CD600B54685 /* Operators.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Operators.swift; sourceTree = "<group>"; };
+		91E46D4A29AF3CD600B54685 /* Rabbit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Rabbit.swift; sourceTree = "<group>"; };
+		91E46D4B29AF3CD600B54685 /* SHA1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SHA1.swift; sourceTree = "<group>"; };
+		91E46D4C29AF3CD600B54685 /* Poly1305.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Poly1305.swift; sourceTree = "<group>"; };
+		91E46D4D29AF3CD600B54685 /* BlockCipher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlockCipher.swift; sourceTree = "<group>"; };
+		91E46D4E29AF3CD600B54685 /* Updatable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Updatable.swift; sourceTree = "<group>"; };
+		91E46D4F29AF3CD600B54685 /* Blowfish.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Blowfish.swift; sourceTree = "<group>"; };
+		91E46D5029AF3CD600B54685 /* BlockDecryptor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlockDecryptor.swift; sourceTree = "<group>"; };
+		91E46D5129AF3CD600B54685 /* StreamEncryptor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StreamEncryptor.swift; sourceTree = "<group>"; };
+		91E46D5229AF3CD600B54685 /* DigestType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DigestType.swift; sourceTree = "<group>"; };
+		91E46D5329AF3CD600B54685 /* Utils1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils1.swift; sourceTree = "<group>"; };
+		91E46D5429AF3CD600B54685 /* Generics.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Generics.swift; sourceTree = "<group>"; };
+		91E46D5529AF3CD600B54685 /* Checksum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Checksum.swift; sourceTree = "<group>"; };
+		91E46D5629AF3CD600B54685 /* SHA2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SHA2.swift; sourceTree = "<group>"; };
+		91E46D5729AF3CD600B54685 /* Padding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Padding.swift; sourceTree = "<group>"; };
+		91E46D5929AF3CD600B54685 /* PKCS7Padding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PKCS7Padding.swift; sourceTree = "<group>"; };
+		91E46D5A29AF3CD600B54685 /* PKCS5.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PKCS5.swift; sourceTree = "<group>"; };
+		91E46D5B29AF3CD600B54685 /* PKCS7.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PKCS7.swift; sourceTree = "<group>"; };
+		91E46D5C29AF3CD600B54685 /* PKCS1v15.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PKCS1v15.swift; sourceTree = "<group>"; };
+		91E46D5D29AF3CD600B54685 /* PBKDF2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PBKDF2.swift; sourceTree = "<group>"; };
+		91E46D5E29AF3CD600B54685 /* PBKDF1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PBKDF1.swift; sourceTree = "<group>"; };
+		91E46D6029AF3CD600B54685 /* BlockModeOptions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlockModeOptions.swift; sourceTree = "<group>"; };
+		91E46D6129AF3CD600B54685 /* OCB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OCB.swift; sourceTree = "<group>"; };
+		91E46D6229AF3CD600B54685 /* CFB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CFB.swift; sourceTree = "<group>"; };
+		91E46D6329AF3CD600B54685 /* CBC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CBC.swift; sourceTree = "<group>"; };
+		91E46D6429AF3CD600B54685 /* ECB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ECB.swift; sourceTree = "<group>"; };
+		91E46D6529AF3CD600B54685 /* CCM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CCM.swift; sourceTree = "<group>"; };
+		91E46D6629AF3CD700B54685 /* PCBC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PCBC.swift; sourceTree = "<group>"; };
+		91E46D6729AF3CD700B54685 /* BlockMode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlockMode.swift; sourceTree = "<group>"; };
+		91E46D6829AF3CD700B54685 /* GCM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GCM.swift; sourceTree = "<group>"; };
+		91E46D6929AF3CD700B54685 /* CipherModeWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CipherModeWorker.swift; sourceTree = "<group>"; };
+		91E46D6A29AF3CD700B54685 /* CTR.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CTR.swift; sourceTree = "<group>"; };
+		91E46D6B29AF3CD700B54685 /* OFB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OFB.swift; sourceTree = "<group>"; };
+		91E46D6C29AF3CD700B54685 /* ChaCha20.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChaCha20.swift; sourceTree = "<group>"; };
+		91E46D6E29AF3CD700B54685 /* Random.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Random.swift; sourceTree = "<group>"; };
+		91E46D6F29AF3CD700B54685 /* GCD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GCD.swift; sourceTree = "<group>"; };
+		91E46D7029AF3CD700B54685 /* Hashable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hashable.swift; sourceTree = "<group>"; };
+		91E46D7129AF3CD700B54685 /* Strideable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Strideable.swift; sourceTree = "<group>"; };
+		91E46D7229AF3CD700B54685 /* Addition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Addition.swift; sourceTree = "<group>"; };
+		91E46D7329AF3CD700B54685 /* Data Conversion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Data Conversion.swift"; sourceTree = "<group>"; };
+		91E46D7429AF3CD700B54685 /* Bitwise Ops.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Bitwise Ops.swift"; sourceTree = "<group>"; };
+		91E46D7529AF3CD700B54685 /* Comparable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Comparable.swift; sourceTree = "<group>"; };
+		91E46D7629AF3CD700B54685 /* Words and Bits.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Words and Bits.swift"; sourceTree = "<group>"; };
+		91E46D7729AF3CD700B54685 /* Square Root.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Square Root.swift"; sourceTree = "<group>"; };
+		91E46D7829AF3CD700B54685 /* Division.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Division.swift; sourceTree = "<group>"; };
+		91E46D7929AF3CD700B54685 /* Prime Test.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Prime Test.swift"; sourceTree = "<group>"; };
+		91E46D7A29AF3CD700B54685 /* Codable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Codable.swift; sourceTree = "<group>"; };
+		91E46D7B29AF3CD700B54685 /* BigUInt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BigUInt.swift; sourceTree = "<group>"; };
+		91E46D7C29AF3CD700B54685 /* Multiplication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Multiplication.swift; sourceTree = "<group>"; };
+		91E46D7D29AF3CD700B54685 /* CS.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CS.swift; sourceTree = "<group>"; };
+		91E46D7E29AF3CD700B54685 /* Exponentiation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Exponentiation.swift; sourceTree = "<group>"; };
+		91E46D7F29AF3CD700B54685 /* Floating Point Conversion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Floating Point Conversion.swift"; sourceTree = "<group>"; };
+		91E46D8029AF3CD700B54685 /* Shifts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Shifts.swift; sourceTree = "<group>"; };
+		91E46D8129AF3CD700B54685 /* Subtraction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Subtraction.swift; sourceTree = "<group>"; };
+		91E46D8229AF3CD700B54685 /* Integer Conversion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Integer Conversion.swift"; sourceTree = "<group>"; };
+		91E46D8329AF3CD700B54685 /* BigInt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BigInt.swift; sourceTree = "<group>"; };
+		91E46D8429AF3CD700B54685 /* String Conversion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String Conversion.swift"; sourceTree = "<group>"; };
+		91E46D8529AF3CD700B54685 /* Array+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+Extension.swift"; sourceTree = "<group>"; };
+		91E46DF529AF3E9400B54685 /* SVRadialGradientLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVRadialGradientLayer.m; sourceTree = "<group>"; };
+		91E46DF629AF3E9400B54685 /* SVIndefiniteAnimatedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVIndefiniteAnimatedView.h; sourceTree = "<group>"; };
+		91E46DF729AF3E9400B54685 /* SVProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVProgressHUD.h; sourceTree = "<group>"; };
+		91E46DF829AF3E9400B54685 /* SVProgressAnimatedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVProgressAnimatedView.m; sourceTree = "<group>"; };
+		91E46DF929AF3E9400B54685 /* SVRadialGradientLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVRadialGradientLayer.h; sourceTree = "<group>"; };
+		91E46DFA29AF3E9400B54685 /* SVProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVProgressHUD.m; sourceTree = "<group>"; };
+		91E46DFB29AF3E9400B54685 /* SVIndefiniteAnimatedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVIndefiniteAnimatedView.m; sourceTree = "<group>"; };
+		91E46DFC29AF3E9400B54685 /* SVProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SVProgressHUD.bundle; sourceTree = "<group>"; };
+		91E46DFD29AF3E9400B54685 /* SVProgressAnimatedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVProgressAnimatedView.h; sourceTree = "<group>"; };
+		91EA52C029A7126A00957400 /* NGAuthVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NGAuthVC.swift; sourceTree = "<group>"; };
+		91EA52C229A7413900957400 /* NGResetVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NGResetVC.swift; sourceTree = "<group>"; };
+		91EA52C429A746DA00957400 /* module.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
+		91FC4A9C29A492F700AAA900 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		91FC4A9E29A4937500AAA900 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		91FC4AA029A4937B00AAA900 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		91FC4AA229A4939200AAA900 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		91FC4AA429A4939B00AAA900 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		91FC4AA629A493AD00AAA900 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		91FC4AA829A493B600AAA900 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		91FC4AAA29A493BC00AAA900 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		91FC4AAC29A493C500AAA900 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		91FC4AAE29A493CC00AAA900 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		91FC4AB229A49F0200AAA900 /* NGAccountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NGAccountVC.swift; sourceTree = "<group>"; };
+		91FC4AB429A4AAF600AAA900 /* NGTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NGTableView.swift; sourceTree = "<group>"; };
+		91FC4AB629A4AC8500AAA900 /* NGTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NGTableViewCell.swift; sourceTree = "<group>"; };
+		91FC4AB829A4BF6000AAA900 /* NGFindVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NGFindVC.swift; sourceTree = "<group>"; };
+		91FC4ABA29A4CBE600AAA900 /* NGFastRegVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NGFastRegVC.swift; sourceTree = "<group>"; };
+		DA6896D1697B75565020314D /* Pods_NGSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NGSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		916EB3DC29964EDC009E0CB0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				91FC4AA929A493B600AAA900 /* CoreFoundation.framework in Frameworks */,
+				91FC4AA529A4939B00AAA900 /* SystemConfiguration.framework in Frameworks */,
+				919A88BF29B1F96900F701F1 /* CFNetwork.framework in Frameworks */,
+				91E46D0B29AF3BFB00B54685 /* EAccountApiSDK.framework in Frameworks */,
+				91E39DB629A89A070061EAC4 /* libWeChatSDK.a in Frameworks */,
+				91E46D0929AF3BFA00B54685 /* KsyzVerify.framework in Frameworks */,
+				91FC4AAF29A493CC00AAA900 /* UIKit.framework in Frameworks */,
+				91E39DB929A89A080061EAC4 /* TencentOpenAPI.a in Frameworks */,
+				91E46D0629AF3BFA00B54685 /* OneLoginSDK.framework in Frameworks */,
+				91FC4AAD29A493C500AAA900 /* StoreKit.framework in Frameworks */,
+				91FC4AAB29A493BC00AAA900 /* CoreTelephony.framework in Frameworks */,
+				91E46D0729AF3BFA00B54685 /* TYRZUISDK.framework in Frameworks */,
+				91FC4AA729A493AD00AAA900 /* Security.framework in Frameworks */,
+				91E46D0829AF3BFA00B54685 /* account_login_sdk_noui_core.framework in Frameworks */,
+				91E46D0A29AF3BFB00B54685 /* OAuth.framework in Frameworks */,
+				91FC4AA329A4939200AAA900 /* AdSupport.framework in Frameworks */,
+				91FC4AA129A4937B00AAA900 /* libz.tbd in Frameworks */,
+				91FC4A9F29A4937500AAA900 /* libsqlite3.tbd in Frameworks */,
+				91FC4A9D29A492F700AAA900 /* libc++.tbd in Frameworks */,
+				314316A74A1EC572E8A3F1FC /* Pods_NGSDK.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		916EB3D529964EDC009E0CB0 = {
+			isa = PBXGroup;
+			children = (
+				916EB3E129964EDC009E0CB0 /* NGSDK */,
+				916EB3E029964EDC009E0CB0 /* Products */,
+				D6930CDE16B9B136D0C8A2BA /* Pods */,
+				ADFA0821D0FBF4BB2B43D8C4 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		916EB3E029964EDC009E0CB0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				916EB3DF29964EDC009E0CB0 /* NGSDK.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		916EB3E129964EDC009E0CB0 /* NGSDK */ = {
+			isa = PBXGroup;
+			children = (
+				916EB3E229964EDC009E0CB0 /* NGSDK.h */,
+				91E39D9E29A868F10061EAC4 /* NGSDKHeader.h */,
+				91DCB6EE299A07B000E90A46 /* NGSDK.swift */,
+				91E39D9C29A860B40061EAC4 /* NGShare.swift */,
+				919AF97729AC44900094A864 /* NGModule.swift */,
+				91EA52C429A746DA00957400 /* module.modulemap */,
+				91E39DC029A8B1070061EAC4 /* Extension */,
+				91E45C99299B3BEE00625A27 /* Resources */,
+				91E45C98299B3BE500625A27 /* Tool */,
+				91E45C97299B3BD600625A27 /* Model */,
+				91E45C96299B3BD000625A27 /* View */,
+				91E45C95299B3BC300625A27 /* ViewComtroller */,
+			);
+			path = NGSDK;
+			sourceTree = "<group>";
+		};
+		91E39DA629A89A070061EAC4 /* Wechat */ = {
+			isa = PBXGroup;
+			children = (
+				91E39DA729A89A070061EAC4 /* WXApi.h */,
+				91E39DA829A89A070061EAC4 /* WXApiObject.h */,
+				91E39DA929A89A070061EAC4 /* WechatAuthSDK.h */,
+				91E39DAA29A89A070061EAC4 /* libWeChatSDK.a */,
+			);
+			path = Wechat;
+			sourceTree = "<group>";
+		};
+		91E39DAB29A89A070061EAC4 /* QQ */ = {
+			isa = PBXGroup;
+			children = (
+				91E39DAC29A89A070061EAC4 /* sdkdef.h */,
+				91E39DAD29A89A070061EAC4 /* TencentOpenApi_IOS_Bundle.bundle */,
+				91E39DAE29A89A070061EAC4 /* TencentOpenAPI.a */,
+				91E39DAF29A89A070061EAC4 /* TencentOpenApiUmbrellaHeader.h */,
+				91E39DB029A89A070061EAC4 /* TencentOAuth.h */,
+				91E39DB129A89A070061EAC4 /* QQApiInterface.h */,
+				91E39DB229A89A070061EAC4 /* QQApiInterfaceObject.h */,
+			);
+			path = QQ;
+			sourceTree = "<group>";
+		};
+		91E39DC029A8B1070061EAC4 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				91E39DC129A8B1310061EAC4 /* NGImage+Ex.swift */,
+				91DE31C929AD97CD0010F0AB /* NGButton+Ex.swift */,
+				91DE31CB29AD980C0010F0AB /* NGDictionary+Ex.swift */,
+				91DE31CD29AD98250010F0AB /* NGString+Ex.swift */,
+				91DE31CF29AD98390010F0AB /* NGViewController+Ex.swift */,
+				91DE31D129AD98630010F0AB /* NGBundle+Ex.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		91E45C95299B3BC300625A27 /* ViewComtroller */ = {
+			isa = PBXGroup;
+			children = (
+				91E45C9A299B655900625A27 /* NGNavigationController.swift */,
+				91E45C9C299B656F00625A27 /* NGViewController.swift */,
+				91E45C9E299B659600625A27 /* NGOneLoginVC.swift */,
+				91FC4AB229A49F0200AAA900 /* NGAccountVC.swift */,
+				91D9B8D3299B90C2005210D6 /* NGPhoneLoginVC.swift */,
+				91FC4ABA29A4CBE600AAA900 /* NGFastRegVC.swift */,
+				91E36CEB29A5AE33008A44EB /* NGPhoneRegVC.swift */,
+				91E36CEF29A622F2008A44EB /* NGBindVC.swift */,
+				91FC4AB829A4BF6000AAA900 /* NGFindVC.swift */,
+				91EA52C229A7413900957400 /* NGResetVC.swift */,
+				91EA52C029A7126A00957400 /* NGAuthVC.swift */,
+				91A8C84E299E198600090410 /* NGUpdateVC.swift */,
+				91435695299F71420046736D /* NGNoticeVC.swift */,
+				91DE31D729ADE22C0010F0AB /* NGLogoutVC.swift */,
+				91DE31D529ADD3B60010F0AB /* NGItemsVC.swift */,
+				91DE31D929ADF9870010F0AB /* NGApiVC.swift */,
+				919A88BC29B1EE2700F701F1 /* NGTestVC.swift */,
+			);
+			path = ViewComtroller;
+			sourceTree = "<group>";
+		};
+		91E45C96299B3BD000625A27 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				918EE6AF299C7D4F00B9C85B /* NGButton.swift */,
+				918EE6B7299CBC8900B9C85B /* NGLabel.swift */,
+				918EE6B1299C7D5A00B9C85B /* NGTextField.swift */,
+				918EE6B9299CBE9B00B9C85B /* NGProtocol.swift */,
+				91FC4AB429A4AAF600AAA900 /* NGTableView.swift */,
+				91FC4AB629A4AC8500AAA900 /* NGTableViewCell.swift */,
+				91DE31D329AD9A000010F0AB /* NGTipView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		91E45C97299B3BD600625A27 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				91435699299F8BEB0046736D /* NGConfig.swift */,
+				91E36CED29A60E5E008A44EB /* NGRealm.swift */,
+				91E46CFC29AF2A2300B54685 /* NGInfo.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		91E45C98299B3BE500625A27 /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				91D9B8D1299B8EC3005210D6 /* NGTool.swift */,
+				91D9B8D5299B92C2005210D6 /* NGEnum.swift */,
+				918EE6B3299C7FDE00B9C85B /* NGDetault.swift */,
+				918EE6B5299CAF0100B9C85B /* NGToast.swift */,
+				918EE6BB299CD7AB00B9C85B /* NGNet.swift */,
+				91A8C84C299DD12A00090410 /* NGDevice.swift */,
+				91435697299F89910046736D /* NGEvent.swift */,
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
+		91E45C99299B3BEE00625A27 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				91E46DF429AF3E9400B54685 /* SVProgressHUD */,
+				91E46D0F29AF3CD600B54685 /* CryptoSwift */,
+				91E46CFE29AF3BFA00B54685 /* OneLoginSDK */,
+				91E39DAB29A89A070061EAC4 /* QQ */,
+				91E39DA629A89A070061EAC4 /* Wechat */,
+				91D9B8D7299B977C005210D6 /* images.bundle */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		91E46CFE29AF3BFA00B54685 /* OneLoginSDK */ = {
+			isa = PBXGroup;
+			children = (
+				91E46CFF29AF3BFA00B54685 /* OneLoginSDK.framework */,
+				91E46D0029AF3BFA00B54685 /* TYRZUISDK.framework */,
+				91E46D0129AF3BFA00B54685 /* account_login_sdk_noui_core.framework */,
+				91E46D0229AF3BFA00B54685 /* KsyzVerify.framework */,
+				91E46D0329AF3BFA00B54685 /* OAuth.framework */,
+				91E46D0429AF3BFA00B54685 /* EAccountApiSDK.framework */,
+				91E46D0529AF3BFA00B54685 /* OneLoginResource.bundle */,
+			);
+			path = OneLoginSDK;
+			sourceTree = "<group>";
+		};
+		91E46D0F29AF3CD600B54685 /* CryptoSwift */ = {
+			isa = PBXGroup;
+			children = (
+				91E46D1029AF3CD600B54685 /* AES.swift */,
+				91E46D1129AF3CD600B54685 /* ASN1 */,
+				91E46D1629AF3CD600B54685 /* StreamDecryptor.swift */,
+				91E46D1729AF3CD600B54685 /* PEM */,
+				91E46D1929AF3CD600B54685 /* BlockEncryptor.swift */,
+				91E46D1A29AF3CD600B54685 /* UInt64+Extension.swift */,
+				91E46D1B29AF3CD600B54685 /* Cryptors.swift */,
+				91E46D1C29AF3CD600B54685 /* HKDF.swift */,
+				91E46D1D29AF3CD600B54685 /* ISO10126Padding.swift */,
+				91E46D1E29AF3CD600B54685 /* Cipher.swift */,
+				91E46D1F29AF3CD600B54685 /* AEAD */,
+				91E46D2229AF3CD600B54685 /* CBCMAC.swift */,
+				91E46D2329AF3CD600B54685 /* Int+Extension.swift */,
+				91E46D2429AF3CD600B54685 /* AES.Cryptors.swift */,
+				91E46D2529AF3CD600B54685 /* Bit.swift */,
+				91E46D2629AF3CD600B54685 /* HMAC.swift */,
+				91E46D2729AF3CD600B54685 /* CMAC.swift */,
+				91E46D2829AF3CD600B54685 /* UInt16+Extension.swift */,
+				91E46D2929AF3CD600B54685 /* Collection+Extension.swift */,
+				91E46D2A29AF3CD600B54685 /* UInt32+Extension.swift */,
+				91E46D2B29AF3CD600B54685 /* Digest.swift */,
+				91E46D2C29AF3CD600B54685 /* UInt128.swift */,
+				91E46D2D29AF3CD600B54685 /* RSA */,
+				91E46D3129AF3CD600B54685 /* Scrypt.swift */,
+				91E46D3229AF3CD600B54685 /* NoPadding.swift */,
+				91E46D3329AF3CD600B54685 /* Foundation */,
+				91E46D3D29AF3CD600B54685 /* UInt8+Extension.swift */,
+				91E46D3E29AF3CD600B54685 /* MD5.swift */,
+				91E46D3F29AF3CD600B54685 /* Cryptor.swift */,
+				91E46D4029AF3CD600B54685 /* CompactMap1.swift */,
+				91E46D4129AF3CD600B54685 /* BatchedCollection.swift */,
+				91E46D4229AF3CD600B54685 /* ISO78164Padding.swift */,
+				91E46D4329AF3CD600B54685 /* SecureBytes.swift */,
+				91E46D4429AF3CD600B54685 /* Signature.swift */,
+				91E46D4529AF3CD600B54685 /* ZeroPadding.swift */,
+				91E46D4629AF3CD600B54685 /* String+Extension.swift */,
+				91E46D4729AF3CD600B54685 /* Authenticator.swift */,
+				91E46D4829AF3CD600B54685 /* SHA3.swift */,
+				91E46D4929AF3CD600B54685 /* Operators.swift */,
+				91E46D4A29AF3CD600B54685 /* Rabbit.swift */,
+				91E46D4B29AF3CD600B54685 /* SHA1.swift */,
+				91E46D4C29AF3CD600B54685 /* Poly1305.swift */,
+				91E46D4D29AF3CD600B54685 /* BlockCipher.swift */,
+				91E46D4E29AF3CD600B54685 /* Updatable.swift */,
+				91E46D4F29AF3CD600B54685 /* Blowfish.swift */,
+				91E46D5029AF3CD600B54685 /* BlockDecryptor.swift */,
+				91E46D5129AF3CD600B54685 /* StreamEncryptor.swift */,
+				91E46D5229AF3CD600B54685 /* DigestType.swift */,
+				91E46D5329AF3CD600B54685 /* Utils1.swift */,
+				91E46D5429AF3CD600B54685 /* Generics.swift */,
+				91E46D5529AF3CD600B54685 /* Checksum.swift */,
+				91E46D5629AF3CD600B54685 /* SHA2.swift */,
+				91E46D5729AF3CD600B54685 /* Padding.swift */,
+				91E46D5829AF3CD600B54685 /* PKCS */,
+				91E46D5F29AF3CD600B54685 /* BlockMode */,
+				91E46D6C29AF3CD700B54685 /* ChaCha20.swift */,
+				91E46D6D29AF3CD700B54685 /* CS_BigInt */,
+				91E46D8529AF3CD700B54685 /* Array+Extension.swift */,
+			);
+			path = CryptoSwift;
+			sourceTree = "<group>";
+		};
+		91E46D1129AF3CD600B54685 /* ASN1 */ = {
+			isa = PBXGroup;
+			children = (
+				91E46D1229AF3CD600B54685 /* ASN1Scanner.swift */,
+				91E46D1329AF3CD600B54685 /* ASN1Encoder.swift */,
+				91E46D1429AF3CD600B54685 /* ASN1Decoder.swift */,
+				91E46D1529AF3CD600B54685 /* ASN1.swift */,
+			);
+			path = ASN1;
+			sourceTree = "<group>";
+		};
+		91E46D1729AF3CD600B54685 /* PEM */ = {
+			isa = PBXGroup;
+			children = (
+				91E46D1829AF3CD600B54685 /* DER.swift */,
+			);
+			path = PEM;
+			sourceTree = "<group>";
+		};
+		91E46D1F29AF3CD600B54685 /* AEAD */ = {
+			isa = PBXGroup;
+			children = (
+				91E46D2029AF3CD600B54685 /* AEADChaCha20Poly1305.swift */,
+				91E46D2129AF3CD600B54685 /* AEAD.swift */,
+			);
+			path = AEAD;
+			sourceTree = "<group>";
+		};
+		91E46D2D29AF3CD600B54685 /* RSA */ = {
+			isa = PBXGroup;
+			children = (
+				91E46D2E29AF3CD600B54685 /* RSA.swift */,
+				91E46D2F29AF3CD600B54685 /* RSA+Signature.swift */,
+				91E46D3029AF3CD600B54685 /* RSA+Cipher.swift */,
+			);
+			path = RSA;
+			sourceTree = "<group>";
+		};
+		91E46D3329AF3CD600B54685 /* Foundation */ = {
+			isa = PBXGroup;
+			children = (
+				91E46D3429AF3CD600B54685 /* String+FoundationExtension.swift */,
+				91E46D3529AF3CD600B54685 /* Blowfish+Foundation.swift */,
+				91E46D3629AF3CD600B54685 /* Utils+Foundation.swift */,
+				91E46D3729AF3CD600B54685 /* HMAC+Foundation.swift */,
+				91E46D3829AF3CD600B54685 /* Data+Extension.swift */,
+				91E46D3929AF3CD600B54685 /* ChaCha20+Foundation.swift */,
+				91E46D3A29AF3CD600B54685 /* Array+Foundation.swift */,
+				91E46D3B29AF3CD600B54685 /* AES+Foundation.swift */,
+				91E46D3C29AF3CD600B54685 /* Rabbit+Foundation.swift */,
+			);
+			path = Foundation;
+			sourceTree = "<group>";
+		};
+		91E46D5829AF3CD600B54685 /* PKCS */ = {
+			isa = PBXGroup;
+			children = (
+				91E46D5929AF3CD600B54685 /* PKCS7Padding.swift */,
+				91E46D5A29AF3CD600B54685 /* PKCS5.swift */,
+				91E46D5B29AF3CD600B54685 /* PKCS7.swift */,
+				91E46D5C29AF3CD600B54685 /* PKCS1v15.swift */,
+				91E46D5D29AF3CD600B54685 /* PBKDF2.swift */,
+				91E46D5E29AF3CD600B54685 /* PBKDF1.swift */,
+			);
+			path = PKCS;
+			sourceTree = "<group>";
+		};
+		91E46D5F29AF3CD600B54685 /* BlockMode */ = {
+			isa = PBXGroup;
+			children = (
+				91E46D6029AF3CD600B54685 /* BlockModeOptions.swift */,
+				91E46D6129AF3CD600B54685 /* OCB.swift */,
+				91E46D6229AF3CD600B54685 /* CFB.swift */,
+				91E46D6329AF3CD600B54685 /* CBC.swift */,
+				91E46D6429AF3CD600B54685 /* ECB.swift */,
+				91E46D6529AF3CD600B54685 /* CCM.swift */,
+				91E46D6629AF3CD700B54685 /* PCBC.swift */,
+				91E46D6729AF3CD700B54685 /* BlockMode.swift */,
+				91E46D6829AF3CD700B54685 /* GCM.swift */,
+				91E46D6929AF3CD700B54685 /* CipherModeWorker.swift */,
+				91E46D6A29AF3CD700B54685 /* CTR.swift */,
+				91E46D6B29AF3CD700B54685 /* OFB.swift */,
+			);
+			path = BlockMode;
+			sourceTree = "<group>";
+		};
+		91E46D6D29AF3CD700B54685 /* CS_BigInt */ = {
+			isa = PBXGroup;
+			children = (
+				91E46D6E29AF3CD700B54685 /* Random.swift */,
+				91E46D6F29AF3CD700B54685 /* GCD.swift */,
+				91E46D7029AF3CD700B54685 /* Hashable.swift */,
+				91E46D7129AF3CD700B54685 /* Strideable.swift */,
+				91E46D7229AF3CD700B54685 /* Addition.swift */,
+				91E46D7329AF3CD700B54685 /* Data Conversion.swift */,
+				91E46D7429AF3CD700B54685 /* Bitwise Ops.swift */,
+				91E46D7529AF3CD700B54685 /* Comparable.swift */,
+				91E46D7629AF3CD700B54685 /* Words and Bits.swift */,
+				91E46D7729AF3CD700B54685 /* Square Root.swift */,
+				91E46D7829AF3CD700B54685 /* Division.swift */,
+				91E46D7929AF3CD700B54685 /* Prime Test.swift */,
+				91E46D7A29AF3CD700B54685 /* Codable.swift */,
+				91E46D7B29AF3CD700B54685 /* BigUInt.swift */,
+				91E46D7C29AF3CD700B54685 /* Multiplication.swift */,
+				91E46D7D29AF3CD700B54685 /* CS.swift */,
+				91E46D7E29AF3CD700B54685 /* Exponentiation.swift */,
+				91E46D7F29AF3CD700B54685 /* Floating Point Conversion.swift */,
+				91E46D8029AF3CD700B54685 /* Shifts.swift */,
+				91E46D8129AF3CD700B54685 /* Subtraction.swift */,
+				91E46D8229AF3CD700B54685 /* Integer Conversion.swift */,
+				91E46D8329AF3CD700B54685 /* BigInt.swift */,
+				91E46D8429AF3CD700B54685 /* String Conversion.swift */,
+			);
+			path = CS_BigInt;
+			sourceTree = "<group>";
+		};
+		91E46DF429AF3E9400B54685 /* SVProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				91E46DF529AF3E9400B54685 /* SVRadialGradientLayer.m */,
+				91E46DF629AF3E9400B54685 /* SVIndefiniteAnimatedView.h */,
+				91E46DF729AF3E9400B54685 /* SVProgressHUD.h */,
+				91E46DF829AF3E9400B54685 /* SVProgressAnimatedView.m */,
+				91E46DF929AF3E9400B54685 /* SVRadialGradientLayer.h */,
+				91E46DFA29AF3E9400B54685 /* SVProgressHUD.m */,
+				91E46DFB29AF3E9400B54685 /* SVIndefiniteAnimatedView.m */,
+				91E46DFC29AF3E9400B54685 /* SVProgressHUD.bundle */,
+				91E46DFD29AF3E9400B54685 /* SVProgressAnimatedView.h */,
+			);
+			path = SVProgressHUD;
+			sourceTree = "<group>";
+		};
+		ADFA0821D0FBF4BB2B43D8C4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				919A88BE29B1F96900F701F1 /* CFNetwork.framework */,
+				91FC4AAE29A493CC00AAA900 /* UIKit.framework */,
+				91FC4AAC29A493C500AAA900 /* StoreKit.framework */,
+				91FC4AAA29A493BC00AAA900 /* CoreTelephony.framework */,
+				91FC4AA829A493B600AAA900 /* CoreFoundation.framework */,
+				91FC4AA629A493AD00AAA900 /* Security.framework */,
+				91FC4AA429A4939B00AAA900 /* SystemConfiguration.framework */,
+				91FC4AA229A4939200AAA900 /* AdSupport.framework */,
+				91FC4AA029A4937B00AAA900 /* libz.tbd */,
+				91FC4A9E29A4937500AAA900 /* libsqlite3.tbd */,
+				91FC4A9C29A492F700AAA900 /* libc++.tbd */,
+				DA6896D1697B75565020314D /* Pods_NGSDK.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D6930CDE16B9B136D0C8A2BA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				83F95CC2E54A4FEAD5BBB850 /* Pods-NGSDK.debug.xcconfig */,
+				62D2CE0514665664C551391C /* Pods-NGSDK.release.xcconfig */,
+			);
+			name = Pods;
+			path = ../Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		916EB3DA29964EDC009E0CB0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				91E46E0629AF3E9400B54685 /* SVProgressAnimatedView.h in Headers */,
+				91E39D9F29A869230061EAC4 /* NGSDKHeader.h in Headers */,
+				91E39DB329A89A070061EAC4 /* WXApi.h in Headers */,
+				91E39DBD29A89A080061EAC4 /* QQApiInterfaceObject.h in Headers */,
+				91E46DFF29AF3E9400B54685 /* SVIndefiniteAnimatedView.h in Headers */,
+				91E39DBC29A89A080061EAC4 /* QQApiInterface.h in Headers */,
+				91E39DBA29A89A080061EAC4 /* TencentOpenApiUmbrellaHeader.h in Headers */,
+				91E39DBB29A89A080061EAC4 /* TencentOAuth.h in Headers */,
+				91E39DB729A89A080061EAC4 /* sdkdef.h in Headers */,
+				91E46E0029AF3E9400B54685 /* SVProgressHUD.h in Headers */,
+				91E46E0229AF3E9400B54685 /* SVRadialGradientLayer.h in Headers */,
+				91E39DB429A89A070061EAC4 /* WXApiObject.h in Headers */,
+				91E39DB529A89A070061EAC4 /* WechatAuthSDK.h in Headers */,
+				91EA52C829A74DC600957400 /* NGSDK.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		916EB3DE29964EDC009E0CB0 /* NGSDK */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 916EB3E629964EDC009E0CB0 /* Build configuration list for PBXNativeTarget "NGSDK" */;
+			buildPhases = (
+				E84343CADED1B34F163A6A85 /* [CP] Check Pods Manifest.lock */,
+				916EB3DA29964EDC009E0CB0 /* Headers */,
+				916EB3DB29964EDC009E0CB0 /* Sources */,
+				916EB3DC29964EDC009E0CB0 /* Frameworks */,
+				916EB3DD29964EDC009E0CB0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NGSDK;
+			productName = NGSDK;
+			productReference = 916EB3DF29964EDC009E0CB0 /* NGSDK.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		916EB3D629964EDC009E0CB0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					916EB3DE29964EDC009E0CB0 = {
+						CreatedOnToolsVersion = 14.0.1;
+						LastSwiftMigration = 1400;
+					};
+				};
+			};
+			buildConfigurationList = 916EB3D929964EDC009E0CB0 /* Build configuration list for PBXProject "NGSDK" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 916EB3D529964EDC009E0CB0;
+			productRefGroup = 916EB3E029964EDC009E0CB0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				916EB3DE29964EDC009E0CB0 /* NGSDK */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		916EB3DD29964EDC009E0CB0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				91E39DB829A89A080061EAC4 /* TencentOpenApi_IOS_Bundle.bundle in Resources */,
+				91D9B8D8299B977C005210D6 /* images.bundle in Resources */,
+				91E46D0C29AF3BFB00B54685 /* OneLoginResource.bundle in Resources */,
+				91E46E0529AF3E9400B54685 /* SVProgressHUD.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		E84343CADED1B34F163A6A85 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NGSDK-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		916EB3DB29964EDC009E0CB0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				91E46DA729AF3CD700B54685 /* Utils+Foundation.swift in Sources */,
+				91E46D9B29AF3CD700B54685 /* UInt16+Extension.swift in Sources */,
+				91E46DB829AF3CD700B54685 /* Authenticator.swift in Sources */,
+				91E46DD029AF3CD700B54685 /* OCB.swift in Sources */,
+				91E46DE129AF3CD700B54685 /* Data Conversion.swift in Sources */,
+				91E36CF029A622F2008A44EB /* NGBindVC.swift in Sources */,
+				91FC4ABB29A4CBE600AAA900 /* NGFastRegVC.swift in Sources */,
+				91E46D9929AF3CD700B54685 /* HMAC.swift in Sources */,
+				91E46DBA29AF3CD700B54685 /* Operators.swift in Sources */,
+				91DE31D029AD98390010F0AB /* NGViewController+Ex.swift in Sources */,
+				91FC4AB929A4BF6000AAA900 /* NGFindVC.swift in Sources */,
+				918EE6BA299CBE9B00B9C85B /* NGProtocol.swift in Sources */,
+				91E46D8729AF3CD700B54685 /* ASN1Scanner.swift in Sources */,
+				91E46D9A29AF3CD700B54685 /* CMAC.swift in Sources */,
+				91E46D9529AF3CD700B54685 /* CBCMAC.swift in Sources */,
+				91E46DDF29AF3CD700B54685 /* Strideable.swift in Sources */,
+				919AF97829AC44900094A864 /* NGModule.swift in Sources */,
+				91E46DBD29AF3CD700B54685 /* Poly1305.swift in Sources */,
+				91E46DF229AF3CD700B54685 /* String Conversion.swift in Sources */,
+				91E46DF029AF3CD700B54685 /* Integer Conversion.swift in Sources */,
+				91E46DB729AF3CD700B54685 /* String+Extension.swift in Sources */,
+				91E46DE429AF3CD700B54685 /* Words and Bits.swift in Sources */,
+				91DCB6EF299A07B000E90A46 /* NGSDK.swift in Sources */,
+				91E46DC029AF3CD700B54685 /* Blowfish.swift in Sources */,
+				91E46D8B29AF3CD700B54685 /* StreamDecryptor.swift in Sources */,
+				91E46DAF29AF3CD700B54685 /* MD5.swift in Sources */,
+				918EE6BC299CD7AB00B9C85B /* NGNet.swift in Sources */,
+				91A8C84F299E198600090410 /* NGUpdateVC.swift in Sources */,
+				91DE31CA29AD97CD0010F0AB /* NGButton+Ex.swift in Sources */,
+				91E46DC729AF3CD700B54685 /* SHA2.swift in Sources */,
+				91E46DE929AF3CD700B54685 /* BigUInt.swift in Sources */,
+				91EA52C329A7413900957400 /* NGResetVC.swift in Sources */,
+				91E46DB429AF3CD700B54685 /* SecureBytes.swift in Sources */,
+				91E46DAB29AF3CD700B54685 /* Array+Foundation.swift in Sources */,
+				91E46DC129AF3CD700B54685 /* BlockDecryptor.swift in Sources */,
+				91E46DD429AF3CD700B54685 /* CCM.swift in Sources */,
+				91E46D8629AF3CD700B54685 /* AES.swift in Sources */,
+				91E46DCF29AF3CD700B54685 /* BlockModeOptions.swift in Sources */,
+				9143569A299F8BEB0046736D /* NGConfig.swift in Sources */,
+				91E46DEE29AF3CD700B54685 /* Shifts.swift in Sources */,
+				91D9B8D6299B92C2005210D6 /* NGEnum.swift in Sources */,
+				91E46DAE29AF3CD700B54685 /* UInt8+Extension.swift in Sources */,
+				91E46DD629AF3CD700B54685 /* BlockMode.swift in Sources */,
+				91E46DA529AF3CD700B54685 /* String+FoundationExtension.swift in Sources */,
+				91E46DCC29AF3CD700B54685 /* PKCS1v15.swift in Sources */,
+				91E46D8A29AF3CD700B54685 /* ASN1.swift in Sources */,
+				91E46DFE29AF3E9400B54685 /* SVRadialGradientLayer.m in Sources */,
+				91E46DC829AF3CD700B54685 /* Padding.swift in Sources */,
+				91E46DDD29AF3CD700B54685 /* GCD.swift in Sources */,
+				91FC4AB529A4AAF600AAA900 /* NGTableView.swift in Sources */,
+				91E45C9D299B656F00625A27 /* NGViewController.swift in Sources */,
+				918EE6B8299CBC8900B9C85B /* NGLabel.swift in Sources */,
+				91E46D9129AF3CD700B54685 /* ISO10126Padding.swift in Sources */,
+				91E46DC329AF3CD700B54685 /* DigestType.swift in Sources */,
+				91E46CFD29AF2A2300B54685 /* NGInfo.swift in Sources */,
+				91E46DA029AF3CD700B54685 /* RSA.swift in Sources */,
+				91E46DB229AF3CD700B54685 /* BatchedCollection.swift in Sources */,
+				91E46DEA29AF3CD700B54685 /* Multiplication.swift in Sources */,
+				91E46DD329AF3CD700B54685 /* ECB.swift in Sources */,
+				91E46DB929AF3CD700B54685 /* SHA3.swift in Sources */,
+				91E46DC929AF3CD700B54685 /* PKCS7Padding.swift in Sources */,
+				91E46DEF29AF3CD700B54685 /* Subtraction.swift in Sources */,
+				91E46DAA29AF3CD700B54685 /* ChaCha20+Foundation.swift in Sources */,
+				91E46D9629AF3CD700B54685 /* Int+Extension.swift in Sources */,
+				918EE6B0299C7D4F00B9C85B /* NGButton.swift in Sources */,
+				91E46D9429AF3CD700B54685 /* AEAD.swift in Sources */,
+				91E45C9B299B655900625A27 /* NGNavigationController.swift in Sources */,
+				91E46D8F29AF3CD700B54685 /* Cryptors.swift in Sources */,
+				91E46DBE29AF3CD700B54685 /* BlockCipher.swift in Sources */,
+				91FC4AB329A49F0200AAA900 /* NGAccountVC.swift in Sources */,
+				91E46DD929AF3CD700B54685 /* CTR.swift in Sources */,
+				91E46DE229AF3CD700B54685 /* Bitwise Ops.swift in Sources */,
+				91E46DCD29AF3CD700B54685 /* PBKDF2.swift in Sources */,
+				91DE31D429AD9A000010F0AB /* NGTipView.swift in Sources */,
+				91E39D9D29A860B40061EAC4 /* NGShare.swift in Sources */,
+				91E46D9C29AF3CD700B54685 /* Collection+Extension.swift in Sources */,
+				91E46DEC29AF3CD700B54685 /* Exponentiation.swift in Sources */,
+				91435696299F71420046736D /* NGNoticeVC.swift in Sources */,
+				91E46D9D29AF3CD700B54685 /* UInt32+Extension.swift in Sources */,
+				91E46D8929AF3CD700B54685 /* ASN1Decoder.swift in Sources */,
+				91E46DC229AF3CD700B54685 /* StreamEncryptor.swift in Sources */,
+				91E46DD729AF3CD700B54685 /* GCM.swift in Sources */,
+				91E46DA129AF3CD700B54685 /* RSA+Signature.swift in Sources */,
+				91E46DDE29AF3CD700B54685 /* Hashable.swift in Sources */,
+				91E46DB529AF3CD700B54685 /* Signature.swift in Sources */,
+				91E46D8D29AF3CD700B54685 /* BlockEncryptor.swift in Sources */,
+				91E46DA629AF3CD700B54685 /* Blowfish+Foundation.swift in Sources */,
+				91E46DB129AF3CD700B54685 /* CompactMap1.swift in Sources */,
+				91E46DF329AF3CD700B54685 /* Array+Extension.swift in Sources */,
+				91E46DA229AF3CD700B54685 /* RSA+Cipher.swift in Sources */,
+				91E46DDA29AF3CD700B54685 /* OFB.swift in Sources */,
+				91E46D9729AF3CD700B54685 /* AES.Cryptors.swift in Sources */,
+				91E46DCE29AF3CD700B54685 /* PBKDF1.swift in Sources */,
+				91E46DB329AF3CD700B54685 /* ISO78164Padding.swift in Sources */,
+				91E46D9829AF3CD700B54685 /* Bit.swift in Sources */,
+				91E45C9F299B659600625A27 /* NGOneLoginVC.swift in Sources */,
+				91E46DB029AF3CD700B54685 /* Cryptor.swift in Sources */,
+				91E46DAC29AF3CD700B54685 /* AES+Foundation.swift in Sources */,
+				91435698299F89910046736D /* NGEvent.swift in Sources */,
+				91D9B8D2299B8EC3005210D6 /* NGTool.swift in Sources */,
+				91E46D9029AF3CD700B54685 /* HKDF.swift in Sources */,
+				91E46E0129AF3E9400B54685 /* SVProgressAnimatedView.m in Sources */,
+				91E46DE729AF3CD700B54685 /* Prime Test.swift in Sources */,
+				91E46DCA29AF3CD700B54685 /* PKCS5.swift in Sources */,
+				91E46D8C29AF3CD700B54685 /* DER.swift in Sources */,
+				91E39DC229A8B1310061EAC4 /* NGImage+Ex.swift in Sources */,
+				91E46DD829AF3CD700B54685 /* CipherModeWorker.swift in Sources */,
+				91E46DCB29AF3CD700B54685 /* PKCS7.swift in Sources */,
+				91E46DE029AF3CD700B54685 /* Addition.swift in Sources */,
+				918EE6B4299C7FDE00B9C85B /* NGDetault.swift in Sources */,
+				91DE31D829ADE22C0010F0AB /* NGLogoutVC.swift in Sources */,
+				91E46DBF29AF3CD700B54685 /* Updatable.swift in Sources */,
+				91E46DD129AF3CD700B54685 /* CFB.swift in Sources */,
+				91E46D9329AF3CD700B54685 /* AEADChaCha20Poly1305.swift in Sources */,
+				91E46DB629AF3CD700B54685 /* ZeroPadding.swift in Sources */,
+				91DE31D629ADD3B60010F0AB /* NGItemsVC.swift in Sources */,
+				91E46DC429AF3CD700B54685 /* Utils1.swift in Sources */,
+				91E46DDB29AF3CD700B54685 /* ChaCha20.swift in Sources */,
+				91DE31D229AD98630010F0AB /* NGBundle+Ex.swift in Sources */,
+				91E46DA429AF3CD700B54685 /* NoPadding.swift in Sources */,
+				91E46DC529AF3CD700B54685 /* Generics.swift in Sources */,
+				918EE6B6299CAF0100B9C85B /* NGToast.swift in Sources */,
+				91E46E0329AF3E9400B54685 /* SVProgressHUD.m in Sources */,
+				91E46DD229AF3CD700B54685 /* CBC.swift in Sources */,
+				91E46DE829AF3CD700B54685 /* Codable.swift in Sources */,
+				91E36CEE29A60E5E008A44EB /* NGRealm.swift in Sources */,
+				91E46DBC29AF3CD700B54685 /* SHA1.swift in Sources */,
+				91E46DE329AF3CD700B54685 /* Comparable.swift in Sources */,
+				91E46DE529AF3CD700B54685 /* Square Root.swift in Sources */,
+				91E46D9E29AF3CD700B54685 /* Digest.swift in Sources */,
+				91D9B8D4299B90C2005210D6 /* NGPhoneLoginVC.swift in Sources */,
+				91E46E0429AF3E9400B54685 /* SVIndefiniteAnimatedView.m in Sources */,
+				91E46D8829AF3CD700B54685 /* ASN1Encoder.swift in Sources */,
+				91E46DA329AF3CD700B54685 /* Scrypt.swift in Sources */,
+				91E46DD529AF3CD700B54685 /* PCBC.swift in Sources */,
+				91E46DA929AF3CD700B54685 /* Data+Extension.swift in Sources */,
+				91E36CEC29A5AE33008A44EB /* NGPhoneRegVC.swift in Sources */,
+				918EE6B2299C7D5A00B9C85B /* NGTextField.swift in Sources */,
+				91E46D9229AF3CD700B54685 /* Cipher.swift in Sources */,
+				919A88BD29B1EE2700F701F1 /* NGTestVC.swift in Sources */,
+				91E46DAD29AF3CD700B54685 /* Rabbit+Foundation.swift in Sources */,
+				91E46DF129AF3CD700B54685 /* BigInt.swift in Sources */,
+				91E46D8E29AF3CD700B54685 /* UInt64+Extension.swift in Sources */,
+				91DE31DA29ADF9870010F0AB /* NGApiVC.swift in Sources */,
+				91FC4AB729A4AC8500AAA900 /* NGTableViewCell.swift in Sources */,
+				91E46DC629AF3CD700B54685 /* Checksum.swift in Sources */,
+				91E46D9F29AF3CD700B54685 /* UInt128.swift in Sources */,
+				91DE31CC29AD980C0010F0AB /* NGDictionary+Ex.swift in Sources */,
+				91E46DE629AF3CD700B54685 /* Division.swift in Sources */,
+				91E46DEB29AF3CD700B54685 /* CS.swift in Sources */,
+				91E46DBB29AF3CD700B54685 /* Rabbit.swift in Sources */,
+				91DE31CE29AD98250010F0AB /* NGString+Ex.swift in Sources */,
+				91E46DDC29AF3CD700B54685 /* Random.swift in Sources */,
+				91A8C84D299DD12A00090410 /* NGDevice.swift in Sources */,
+				91EA52C129A7126A00957400 /* NGAuthVC.swift in Sources */,
+				91E46DED29AF3CD700B54685 /* Floating Point Conversion.swift in Sources */,
+				91E46DA829AF3CD700B54685 /* HMAC+Foundation.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		916EB3E429964EDC009E0CB0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		916EB3E529964EDC009E0CB0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		916EB3E729964EDC009E0CB0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 83F95CC2E54A4FEAD5BBB850 /* Pods-NGSDK.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/NGSDK/Resources/OneLoginSDK",
+					"$(PROJECT_DIR)/NGSDK/Resources",
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${DT_TOOLCHAIN_DIR}/usr/lib/swift/${PLATFORM_NAME}\"",
+					/usr/lib/swift,
+					"$(SDKROOT)/usr/lib/swift",
+					"$(PROJECT_DIR)/NGSDK/Resources/Wechat",
+					"$(PROJECT_DIR)/NGSDK/Resources/QQ",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULEMAP_FILE = "$(SRCROOT)/NGSDK/module.modulemap";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-l\"c++\"",
+					"-l\"compression\"",
+					"-l\"swiftCoreGraphics\"",
+					"-l\"z\"",
+					"-framework",
+					"\"Accelerate\"",
+					"-framework",
+					"\"CFNetwork\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"QuartzCore\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"UIKit\"",
+					"-weak_framework",
+					"\"Combine\"",
+					"-weak_framework",
+					"\"SwiftUI\"",
+					"-ObjC",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ngk.dosear;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INCLUDE_PATHS = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		916EB3E829964EDC009E0CB0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 62D2CE0514665664C551391C /* Pods-NGSDK.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 72YZ9S75TT;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/NGSDK/Resources/OneLoginSDK",
+					"$(PROJECT_DIR)/NGSDK/Resources",
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${DT_TOOLCHAIN_DIR}/usr/lib/swift/${PLATFORM_NAME}\"",
+					/usr/lib/swift,
+					"$(SDKROOT)/usr/lib/swift",
+					"$(PROJECT_DIR)/NGSDK/Resources/Wechat",
+					"$(PROJECT_DIR)/NGSDK/Resources/QQ",
+				);
+				MARKETING_VERSION = 1.0;
+				MODULEMAP_FILE = "$(SRCROOT)/NGSDK/module.modulemap";
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-l\"c++\"",
+					"-l\"compression\"",
+					"-l\"swiftCoreGraphics\"",
+					"-l\"z\"",
+					"-framework",
+					"\"Accelerate\"",
+					"-framework",
+					"\"CFNetwork\"",
+					"-framework",
+					"\"CoreGraphics\"",
+					"-framework",
+					"\"Foundation\"",
+					"-framework",
+					"\"QuartzCore\"",
+					"-framework",
+					"\"Security\"",
+					"-framework",
+					"\"UIKit\"",
+					"-weak_framework",
+					"\"Combine\"",
+					"-weak_framework",
+					"\"SwiftUI\"",
+					"-ObjC",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ngk.dosear;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_INCLUDE_PATHS = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		916EB3D929964EDC009E0CB0 /* Build configuration list for PBXProject "NGSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				916EB3E429964EDC009E0CB0 /* Debug */,
+				916EB3E529964EDC009E0CB0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		916EB3E629964EDC009E0CB0 /* Build configuration list for PBXNativeTarget "NGSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				916EB3E729964EDC009E0CB0 /* Debug */,
+				916EB3E829964EDC009E0CB0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 916EB3D629964EDC009E0CB0 /* Project object */;
+}
